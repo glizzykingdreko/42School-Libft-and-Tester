@@ -12,6 +12,7 @@ This tester is designed to facilitate the process of verifying your Libft projec
     - [Compiling and Running the Tester](#compiling-and-running-the-tester)
       - [With bonus functions](#with-bonus-functions)
     - [Example](#example)
+    - [Improvements](#improvements)
   - [Conclusion](#conclusion)
 
 ## Requirements
@@ -64,9 +65,13 @@ make bonus LIBFT_PATH=../libft
 ./test_libft
 ```
 
+### Improvements
+Take a look into the [tester.c](tester.c) file and you'll find more information about the tester and how it works. This is a first version of the tester, I need to leave some work to do for you guys. 😅 (jk is enough to get 125 points with bonus functions)
+
+
 ## Conclusion
 This tester aims to streamline the process of verifying your Libft project's correctness and functionality. By utilizing this tester, you can ensure that your implementation performs as expected, ultimately enhancing the quality of your work.
 
 If you have any questions or suggestions, feel free to contact me via [mail](mailto:glizzykingdreko@protonmail.com) or on [twitter](https://twitter.com/GlizzyKingDreko), I'll be happy to help you.
 
-Let's those 125 points! 🚀
+Let's get those points! 🚀
