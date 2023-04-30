@@ -1,0 +1,53 @@
+{
+    "base": [
+        "ft_isalpha",
+        "ft_isdigit",
+        "ft_isalnum",
+        "ft_isascii",
+        "ft_isprint",
+        "ft_strlen",
+        "ft_memset",
+        "ft_bzero",
+        "ft_memcpy",
+        "ft_memmove",
+        "ft_strlcpy",
+        "ft_strlcat",
+        "ft_toupper",
+        "ft_tolower",
+        "ft_strchr",
+        "ft_strrchr",
+        "ft_strncmp",
+        "ft_memchr",
+        "ft_memcmp",
+        "ft_strnstr",
+        "ft_atoi"
+    ],
+    "additional": [
+        "ft_substr",
+        "ft_strjoin",
+        "ft_strtrim",
+        "ft_split",
+        "ft_itoa",
+        "ft_strmapi",
+        "ft_striteri",
+        "ft_putchar_fd",
+        "ft_putstr_fd",
+        "ft_putendl_fd",
+        "ft_putnbr_fd"
+    ],
+    "bonus": [
+        "ft_lstnew",
+        "ft_lstadd_front",
+        "ft_lstsize",
+        "ft_lstlast",
+        "ft_lstadd_back",
+        "ft_lstdelone",
+        "ft_lstclear",
+        "ft_lstiter",
+        "ft_lstmap"
+    ],
+    "h_files": {
+        "libft": "#ifndef LIBFT_H\n#define LIBFT_H\n\n#include <stdlib.h>\n#include <unistd.h>\n#include <string.h>\n\n/* Function prototypes go here */\n\n#endif"
+    },
+    "Makefile": "NAME = libft.a\nCC = cc\nCFLAGS = -Wall -Wextra -Werror\nSRC = /* Add source files here left u some work :P to do */\nOBJ = $(SRC:.c=.o)\n\nall: $(NAME)\n\n$(NAME): $(OBJ)\n\tar rcs $(NAME) $(OBJ)\n\n%.o: %.c\n\t$(CC) $(CFLAGS) -c $< -o $@\n\nclean:\n\trm -f $(OBJ)\n\nfclean: clean\n\trm -f $(NAME)\n\nre: fclean all\n\n.PHONY: all clean fclean re"
+}
