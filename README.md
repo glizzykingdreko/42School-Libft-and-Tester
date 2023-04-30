@@ -42,7 +42,7 @@ This command will create all the needed .c files for the project and setup the e
 
 If you want to create the files in a different folder, you can use the `-d` option to specify the path. For example, if you want to create the files in the `~/Desktop` folder, you can run the following command:
 ```sh
-python3 helper.py setup -dp ~/Desktop
+python3 helper.py setup -d ~/Desktop
 ```
 
 If you want to create the files for the bonus part as well, you can use the `--bonus` argument. For example let's setup the project with the bonus part included:
